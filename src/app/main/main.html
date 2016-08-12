@@ -1,0 +1,30 @@
+  
+<div ng-include="'app/components/navbar/navbar.html'"></div>
+
+    <div ng-controller="CarouselCtrl" id="slides">
+    <div>
+      <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <img ng-src="{{slide.image}}">
+          <div class="carousel-caption">
+            <h1>{{slide.caption}}</h1>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>   
+
+ 
+
+<div class="row">
+  <div class="container">
+  <div class="footer">
+  </div>
+
+</div>
+  
+</div>
+
+
+
+
