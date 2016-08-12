@@ -99,19 +99,15 @@ body{
 	border: none !important; 
 	padding: 10px;
 	border: 1px solid;
-	text-decoration: none;
+	background: #444d58;
+	color: #fff;
 }
 .btn-theme:hover{
 	text-decoration: none;
 }
-.hvr-shutter-out-horizontal {
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    background: #444d58;
-	color: #fff;
-    transition-property: transform;
+.btn-theme a{
+	color: #0768cb;
+	text-decoration: none;
 }
 .about-section-home h2{
 	font-weight: 900;
@@ -126,4 +122,182 @@ body{
 }
 .about-section-home{
 	margin: 10px;
+}
+.description-section-home{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.description-section-home img{
+	margin-bottom: 45px;
+}
+.description-section-home p{
+	font-size: 1.2em;
+}
+.vertical .carousel-inner {
+  height: 100%;
+}
+
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 400px;
+}
+
+.carousel.vertical .prev {
+  top: -400px;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -400px;
+}
+
+.carousel.vertical .active.right {
+  top: 400px;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}
+/* Style the Sequence container */
+#sequence1 {
+  position: relative;
+  width: 100%;
+  height: 385px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Reset */
+#sequence1 .seq-canvas,
+#sequence1 .seq-canvas > * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Make the canvas the same dimensions as the container and prevent lines from
+   wrapping so each step can sit side-by-side */
+#sequence1 .seq-canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+/* Make the steps the same size as the container and sit side-by-side */
+#sequence1 .seq-canvas > * {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  white-space: normal;
+  text-align: center;
+  color: white;
+}
+
+/* Used to vertically center align the .content element */
+#sequence1 .seq-canvas > li:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/* Vertically center align the .content element */
+#sequence1 .content {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4%;
+  font-size: 16px;
+}
+
+#sequence1 .step1 {
+  background-color: #279fe5;
+}
+
+#sequence1 .step2 {
+  background-color: #f96852;
+}
+
+#sequence1 .step3 {
+  background-color: #2bbf8e;
+}
+
+#sequence1 h2,
+#sequence1 h3 {
+  margin: 0;
+  display: block;
+  line-height: 120%;
+}
+
+#sequence1 h2 {
+  margin-bottom: .5em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.6em;
+}
+
+#sequence1 h3 {
+  font-size: 1.4em;
+}
+/* Starting positions */
+#sequence1 h2,
+#sequence1 h3 {
+  opacity: 0;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+#sequence1 h2 {
+  -webkit-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+}
+
+#sequence1 h3 {
+  -webkit-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+}
+
+/* Animate in positions for content */
+#sequence1 .seq-in h2,
+#sequence1 .seq-in h3 {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* Animate out positions for content */
+#sequence1 .seq-out h2,
+#sequence1 .seq-out h3 {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+/* Animate out positions for content */
+#sequence1 .seq-out h2,
+#sequence1 .seq-out h3 {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }

@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('vitbs', ['ui.router', 'ui.bootstrap'])
+    .module('vitbs', ['ui.router', 'ui.bootstrap', 'bootstrapLightbox'])
     .config(config);
 
   function config($stateProvider, $urlRouterProvider) {
