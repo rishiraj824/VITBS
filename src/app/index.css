@@ -48,10 +48,8 @@ body{
 }
 .carousel-caption h1{
 	font-weight: 700;
-	font-size: 4.8em;
+	font-size: 3.3em;
 	letter-spacing: 2px;
-	margin-top: -40px;
-	left: -30px !important;
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -77,4 +75,55 @@ body{
 
 .carousel-control{
 	display : none;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 50% !important;
+    top: 170px;
+    z-index: 10;
+    padding-bottom: 20px;
+    text-align: left;
+    text-shadow: none !important; 
+}
+.underline{
+	margin-top: 20px;
+    border-bottom: 10px solid #fff;
+    content: "";
+    width: 36%;
+
+}
+.btn-theme{	
+	text-transform: uppercase;
+	outline: 0 !important;
+	border: none !important; 
+	padding: 10px;
+	border: 1px solid;
+	text-decoration: none;
+}
+.btn-theme:hover{
+	text-decoration: none;
+}
+.hvr-shutter-out-horizontal {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    background: #444d58;
+	color: #fff;
+    transition-property: transform;
+}
+.about-section-home h2{
+	font-weight: 900;
+	color: #333333;
+	text-transform: uppercase;
+	font-size: 2.2em;
+}
+.about-section-home p{
+	font-weight: 400;
+	color: #333333;
+	font-size: 1.5em;
+}
+.about-section-home{
+	margin: 10px;
 }

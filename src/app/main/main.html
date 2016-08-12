@@ -3,25 +3,33 @@
 
     <div ng-controller="CarouselCtrl" id="slides">
     <div>
-      <carousel interval="myInterval">
+      <carousel >
         <slide ng-repeat="slide in slides" active="slide.active">
           <img ng-src="{{slide.image}}">
-          <div class="carousel-caption">
+          <div class="carousel-caption" interval="captionInterval">
             <h1>{{slide.caption}}</h1>
+            <div class="underline"></div>
           </div>
         </slide>
       </carousel>
     </div>
   </div>   
-
+<div class="container">
+  <div class="about-section-home">
+  <br>
+     <h2>Scripting Success through Excellence</h2><br>
+     <p>VIT Business School, is fast emerging as a premier management institution that adapts to the ever changing needs of the industry. The focus is on making the MBA graduates versatile and innovative, in line with the current and emerging industry requirements. </p>
+    <a href="#" class="btn-theme hvr-shutter-out-horizontal">Read More</a>
+  </div>
  
+</div>
+  
 
-<div class="row">
   <div class="container">
   <div class="footer">
+
   </div>
 
-</div>
   
 </div>
 

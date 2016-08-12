@@ -5,7 +5,7 @@
   /*CArousel*/
     app.controller('CarouselCtrl', function($scope){
       $scope.myInterval = 3000;
-
+      $scope.captionInterval = 4000;
       $scope.slides = [
     {
       image: 'http://lorempixel.com/1920/700/sports',
