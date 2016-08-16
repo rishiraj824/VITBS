@@ -1,115 +1,193 @@
   
 <div ng-include="'app/components/navbar/navbar.html'"></div>
-
+  <div id="slides">
     <div ng-controller="CarouselCtrl" id="slides">
     <div>
-      <carousel >
+      <carousel interval="myInterval">
         <slide ng-repeat="slide in slides" active="slide.active">
           <img ng-src="{{slide.image}}">
-          <div class="carousel-caption" interval="captionInterval">
+          <div class="overlay"></div>
+          <div class="carousel-caption wow slideInLeft" data-wow-duration="1s" >
             <h1>{{slide.caption}}</h1>
             <div class="underline"></div>
           </div>
         </slide>
       </carousel>
     </div>
-  </div>   
+  </div> 
+  </div>
+      
 <div class="container">
-  <div class="about-section-home">
+  <div class="about-section-home wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
   <br>
-     <h2>Scripting Success through Excellence</h2><br>
+     <h2 >Scripting Success through Excellence</h2><br>
      <p>VIT Business School, is fast emerging as a premier management institution that adapts to the ever changing needs of the industry. The focus is on making the MBA graduates versatile and innovative, in line with the current and emerging industry requirements. </p><br>
      <a href="#" class="btn-theme hvr-shutter-out-horizontal">Read More</a>
   </div>
-  <div class="description-section-home">
+  <div class="description-section-home wow fadeInUp" data-wow-duration="2s"  data-wow-delay="1s" >
     <div ng-controller="DescriptionCtrl" >
     <div ng-repeat="desc in description">
       <div class="col-sm-12 col-lg-3 col-xs-12 col-md-3">
-        <img src="{{desc.image}}" />
-        <p>{{desc.caption}}</p><br>
+        <img class="cursor-pointer hvr-float" src="{{desc.image}}" />
+        <p class="cursor-pointer" >{{desc.caption}}</p><br>
       </div>        
     </div>     
   </div> 
   </div>
-  <!-- <div class="video-section-home">
-    <ul ng-controller="GalleryCtrl">
-      <li ng-repeat="image in images">
-        <a ng-click="openModal($index)">
-          <img ng-src="{{image.thumbUrl}}" class="img-thumbnail">
-        </a>
-      </li>
-    </ul>
-  </div> -->
-  <div class="carousels-section-home">
-    <div class="row">
-      <div class="col-lg-6 col-sm-12 col-md-6">
-      <div id="sequence1">
-        <ul class="seq-canvas">
+  
+  </div>
+  <div>
+    <div ng-controller="ModalDemoCtrl" >
+    <script type="text/ng-template"  id="myModalContent.html">
+        <div class="modal-header">
+            <a href="#" ng-click="cancel()"><i class="fa fa-times fa-2x white" ></i></a>
+        </div>
+        <div class="modal-body">
+           <iframe id="cartoonVideo" width="800" height="500"  src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+        </div> 
+    </script>
+<div class="height" ng-click="open('lg')" class="col-sm-12 col-lg-12 col-md-12 video-modal padding-lr-0" ng-parallax pattern="'http://lorempixel.com/1900/900/sports'" speed="0" reverse="false" >
+    <div class="overlay"></div>
+<span class="play">&#9658;</span>
+    
+</div>
+    
+</div>
+  </div>
 
-          <li class="step1">
-            <div class="content">
-              <h2 data-seq>Powered by Sequence.js</h2>
-              <h3 data-seq>The open-source CSS animation framework.</h3>
-            </div>
-          </li>
-
-          <li class="step2">
-            <div class="content">
-              <h2 data-seq>Create Unique Animated Themes</h2>
-              <h3 data-seq>For responsive sliders, presentations, <br />banners, and other step-based applications.</h3>
-            </div>
-          </li>
-
-          <li class="step3">
-            <div class="content">
-              <h2 data-seq>No Restrictions, Endless Possibilities</h2>
-              <h3 data-seq>Use the HTML and CSS syntax you're used to. <br />No JavaScript knowledge required.</h3>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-sm-12 col-md-6">
-       <div id="sequence2">
-        <ul class="seq-canvas">
-
-          <li class="step1">
-            <div class="content">
-              <h2 data-seq>Powered by Sequence.js</h2>
-              <h3 data-seq>The open-source CSS animation framework.</h3>
-            </div>
-          </li>
-
-          <li class="step2">
-            <div class="content">
-              <h2 data-seq>Create Unique Animated Themes</h2>
-              <h3 data-seq>For responsive sliders, presentations, <br />banners, and other step-based applications.</h3>
-            </div>
-          </li>
-
-          <li class="step3">
-            <div class="content">
-              <h2 data-seq>No Restrictions, Endless Possibilities</h2>
-              <h3 data-seq>Use the HTML and CSS syntax you're used to. <br />No JavaScript knowledge required.</h3>
-            </div>
-          </li>
-
-        </ul>
-      </div>
+     
+  <div class="campuss-buzz">
+    <br>
+    <div class="container">
+      <h2 class="section-header">Campus Buzz</h2><br>
     </div>
      
+     <div class="col-sm-12 col-lg-6 col-md-6 padding-lr-0">
+        <div ng-controller="CarouselCtrl1" id="slides-small">
+      <div>
+      <carousel interval="myInterval" class="vertical hvr-sweep-to-right" >
+        <slide ng-repeat="slide in slides" active="slide.active">
+        <div class="small-slide">
+          <div class="col-sm-4  col-lg-4 col-md-4 padding-lr-0">
+        <div class="img-container grow">
+          <img ng-src="{{slide.image}}">
+        </div>
+        </div>
+        <div class="col-sm-8 col-lg-8 col-md-8 padding-lr-0">
+        <div class="content-container">
+       
+          <h3 class="heading-carousel">Testimonials</h3>
+            <h1 class="carousel-caption-small cursor-pointer hvr-bob">{{slide.caption}}</h1>
+             <p  class="carousel-caption-description">{{slide.description}}</p>
+             <a href="{{slide.link}}" class="know-more hvr-underline-from-center">Read More</a>
+            
+          </div>
+          </div>
+        </div>
+        
+          </slide>
+          </carousel>
+        </div>
+          </div>
+  </div> 
+     <div class="col-sm-12 col-lg-6 col-md-6 padding-lr-0">
+        <div ng-controller="CarouselCtrl2" id="slides-small">
+    <div>
+      <carousel interval="myInterval" class="vertical hvr-sweep-to-left" >
+        <slide ng-repeat="slide in slides" active="slide.active">
+        <div class="small-slide">
+           <div class="col-sm-4 col-lg-4 col-md-4 padding-lr-0">
+        <div class="img-container grow">
+          <img ng-src="{{slide.image}}">
+        </div>
+        </div>
+        <div class="col-sm-8 col-lg-8 col-md-8 padding-lr-0">
+        <div class="content-container wow fadeIn" data-wow-duration="1s" >
+          <h3 class="heading-carousel">Events</h3>
+            <h1 class="carousel-caption-small cursor-pointer hvr-bob">{{slide.caption}}</h1>
+            <p class="carousel-caption-description">{{slide.description}}</p>
+            <a href="{{slide.link}}" class="know-more hvr-underline-from-center">See All Events</a>
+          </div>
+          </div>
+        </div>
+       
+          
+  
+                  
+        </slide>
+      </carousel>
+    </div>
+  </div> 
+     </div>
   </div>
-  <div class="about-section-home">
+  <div class="admission-section-home">
+    <div  class="container">
   <br>
-     <h2>Admission Procedure</h2><br>
+     <h2 >Admission Procedure</h2><br>
      <p>VIT Business School, is fast emerging as a premier management institution that adapts to the ever changing needs of the industry. The focus is on making the MBA graduates versatile and innovative, in line with the current and emerging industry requirements. </p><br>
      <a href="#" class="btn-theme hvr-shutter-out-horizontal">Know More</a>
   </div>
-  <div class="footer">
-
+  
+  
   </div>
+  <div class="programs-offered">
+  <br>
+     <div class="col-lg-3 col-sm-12 col-md-3 padding-lr-0">
+     <div class="program-offered-card dark-blue">
+       <h2 class="program-details  ">Programs offered</h2>
+     </div>
+      
+       </div>
+
+       <div class="courses col-lg-6 col-sm-12 col-md-6 padding-lr-0">
+          <div class="width-20 col-lg-4 col-sm-12 col-md-4 cursor-pointer padding-lr-0">
+        <div class="program-offered-card ">
+           <h2 class="program-details  hvr-float ">BBA</h2>
+        </div>
+         
+          </div>
+           <div class="width-20 col-lg-4 col-sm-12 col-md-4 cursor-pointer padding-lr-0">
+           <div class="program-offered-card ">
+             <h2 class="program-details   hvr-float">MBA</h2>
+           </div>
+          
+          </div>
+           <div class="width-20 col-lg-4 col-sm-12 col-md-4 cursor-pointer padding-lr-0">
+           <div class="program-offered-card ">
+             <h2 class="program-details   hvr-float">PHD</h2>
+           </div>
+          
+          </div>
+          <div class="blue-overlay"></div>
+       </div>
+
+           <div class="col-lg-3 col-sm-12 col-md-3 cursor-pointer padding-lr-0">
+             <div class="program-offered-card dark-blue">
+               
+               <h2 class="program-details  hvr-float"><span class="bold">2016</span><br> Prospectus</h2>
+               <a href="#" class="btn-theme hvr-shutter-out-horizontal">Download Prospectus</a>
+             </div>
+          </div>
+  </div>
+  
+<div class="timeline">
+  <ol>
+  <li>
+    <span class="details">
+      Description of point 1
+    </span>
+  </li>
+  <li>
+    <span class="details">
+      Description of point 2
+    </span>
+  </li>
+  <li>
+    <span class="details">
+      Description of point 3
+    </span>
+  </li>
+</ol>
 </div>
 
   
