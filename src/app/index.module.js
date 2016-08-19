@@ -45,8 +45,8 @@
          templateUrl: 'app/about-us/advantage.html'
        })
        .state('cdm',{
-         url: '/about-us/cdm',
-         templateUrl: 'app/about-us/cdm.html'
+         url: '/about-us/',
+         templateUrl: 'app/main/cdm.html'
        })
        .state('bschool-ranking',{
          url: '/about-us/bschool-ranking',
