@@ -18,13 +18,13 @@
   </div>
       
 <div class="container">
-  <div class="about-section-home wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+  <div class="about-section-home wow fadeInUp" data-wow-duration="1s" >
   <br>
      <h2 >Scripting Success through Excellence</h2><br>
      <p>VIT Business School, is fast emerging as a premier management institution that adapts to the ever changing needs of the industry. The focus is on making the MBA graduates versatile and innovative, in line with the current and emerging industry requirements. </p><br>
      <a href="#" class="btn-theme hvr-shutter-out-horizontal">Read More</a>
   </div>
-  <div class="description-section-home wow fadeInUp" data-wow-duration="2s"  data-wow-delay="1s" >
+  <div class="description-section-home wow fadeInUp" data-wow-duration="1s"  >
     <div ng-controller="DescriptionCtrl" >
     <div ng-repeat="desc in description">
       <div class="col-sm-12 col-lg-3 col-xs-12 col-md-3">
@@ -73,11 +73,11 @@
           <img ng-src="{{slide.image}}">
         </div>
         </div>
-        <div class="col-sm-8 col-lg-8 col-md-8 padding-lr-0">
+        <div class="col-sm-8 col-lg-8 col-md-8 ">
         <div class="content-container">
        
           <h3 class="heading-carousel">Testimonials</h3>
-            <h1 class="carousel-caption-small cursor-pointer hvr-bob">{{slide.caption}}</h1>
+            <h2 class="carousel-caption-small cursor-pointer hvr-bob">{{slide.caption}}</h2>
              <p  class="carousel-caption-description">{{slide.description}}</p>
              <a href="{{slide.link}}" class="know-more hvr-underline-from-center">Read More</a>
             
@@ -101,10 +101,10 @@
           <img ng-src="{{slide.image}}">
         </div>
         </div>
-        <div class="col-sm-8 col-lg-8 col-md-8 padding-lr-0">
+        <div class="col-sm-8 col-lg-8 col-md-8 ">
         <div class="content-container wow fadeIn" data-wow-duration="1s" >
           <h3 class="heading-carousel">Events</h3>
-            <h1 class="carousel-caption-small cursor-pointer hvr-bob">{{slide.caption}}</h1>
+            <h2 class="carousel-caption-small cursor-pointer hvr-bob">{{slide.caption}}</h2>
             <p class="carousel-caption-description">{{slide.description}}</p>
             <a href="{{slide.link}}" class="know-more hvr-underline-from-center">See All Events</a>
           </div>
@@ -173,18 +173,23 @@
 <div class="timeline">
   <ol>
   <li>
-    <span class="details">
-      Description of point 1
+    <span class="details cursor-pointer hvr-float">
+      <h4>22 Aug</h4>
     </span>
   </li>
   <li>
-    <span class="details">
-      Description of point 2
+    <span class="details cursor-pointer hvr-float">
+      <h4>Description of point 2</h4>
     </span>
   </li>
   <li>
-    <span class="details">
-      Description of point 3
+    <span class="details cursor-pointer hvr-float">
+      <h4>Description of point 3</h4>
+    </span>
+  </li>
+  <li>
+    <span class="details cursor-pointer hvr-float">
+      <h4>Description of point 3</h4>
     </span>
   </li>
 </ol>

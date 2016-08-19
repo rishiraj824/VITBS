@@ -56,25 +56,25 @@
       $scope.captionInterval = 4000;
       $scope.slides = [
           {
-            image: 'http://lorempixel.com/310/300/sports',
+            image: 'http://lorempixel.com/210/300/sports',
             caption: 'The University For Leaders',
             description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
             link : '#'
           },
           {
-            image: 'http://lorempixel.com/310/300/food',
+            image: 'http://lorempixel.com/210/300/food',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link : '#'
           },
           {
-            image: 'http://lorempixel.com/310/300/sports',
+            image: 'http://lorempixel.com/210/300/sports',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link : '#'
           },
           {
-            image: 'http://lorempixel.com/310/300/food',
+            image: 'http://lorempixel.com/210/300/food',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link : '#'
@@ -87,25 +87,25 @@
       $scope.myInterval = 3000;
       $scope.slides = [
           {
-            image: 'http://lorempixel.com/310/300/sports',
+            image: 'http://lorempixel.com/210/300/sports',
             caption: 'The University For Leaders',
             description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
             link: "#"
           },
           {
-            image: 'http://lorempixel.com/310/300/food',
+            image: 'http://lorempixel.com/210/300/food',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link: "#"
           },
           {
-            image: 'http://lorempixel.com/310/300/sports',
+            image: 'http://lorempixel.com/210/300/sports',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link: "#"
           },
           {
-            image: 'http://lorempixel.com/310/300/food',
+            image: 'http://lorempixel.com/210/300/food',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link: "#"

@@ -2,20 +2,76 @@
 <nav class="navbar navbar-static-top navbar-inverse" id="nav-new" ng-controller="NavbarController as navbar">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         VIT BS
       </a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav pull-right">
-        <li><a class="hvr-underline-from-center" ng-href="#">About Us</a></li>
-        <li><a class="hvr-underline-from-center" ng-href="#">Programs</a></li>
-        <li><a class="hvr-underline-from-center" ng-href="#">Admissions</a></li>
-        <li><a class="hvr-underline-from-center" ng-href="#">Campus</a></li>
-        <li><a class="hvr-underline-from-center" ng-href="#">Placements</a></li>
-        <li><a class="hvr-underline-from-center" ng-href="#">Events</a></li>
-        <li><a class="hvr-underline-from-center" ng-href="#">Contact Us</a></li>
+        <li class="dropdown"><a role="button" aria-haspopup="true" aria-expanded="false"  class="dropdown-toggle">About Us</a>
+        <ul class="dropdown-menu">
+                    <li><a  ng-href="/about-us/chancellor">Chancellor's Message</a></li>
+                    <li><a  ng-href="/about-us/vm">Vice Chancellor's Message</a></li>
+                    <li><a  ng-href="/about-us/dm">Dean's Message</a></li>
+                    <li><a  ng-href="/about-us/vision">Our Mission, Values And Beliefs</a></li>
+                    <li><a  ng-href="/about-us/advantage">VIT Business School Advantage</a></li>
+                    <li><a  ng-href="/about-us/philosophy">Our Philosophy of Learning</a></li>
+                    <li><a  ng-href="/about-us/excellence">Course that's Designed for Excellence</a></li>
+                    <li><a  ng-href="/about-us/cdm">Course Delivery Model</a></li>
+                    <li><a  ng-href="/about-us/bschool-ranking">Business School Ranking</a></li>
+          </ul>
+
+        </li>
+        <li class="dropdown"><a role="button" data-toggle="dropdown" class="dropdown-toggle">Programs</a>
+        <ul class="dropdown-menu">          
+
+                    <li><a  ng-href="/programs/mba-international">MBA (International Business)</a></li>
+                    <li><a  ng-href="/programs/mba">MBA</a></li>
+                    <li><a  ng-href="/programs/bba">BBA</a></li>
+                    <li><a  ng-href="/programs/executive-mba">Executive MBA</a></li>
+                    <li><a  ng-href="/programs/phd">PHD</a></li>
+          </ul>
+
+        </li>
+        <li class="dropdown"><a role="button" data-toggle="dropdown" class="dropdown-toggle">Admissions</a>
+        <ul class="dropdown-menu">
+                    <li><a  ng-href="/admissions">Admission Procedure</a></li>
+                    <li><a  ng-href="#">Information Brochure</a></li>
+          </ul>
+
+        </li>
+        <li class="dropdown"><a role="button" data-toggle="dropdown"  class="dropdown-toggle">Faculty</a>
+        <ul class="dropdown-menu">
+                    <li><a  ng-href="/faculty/chennai">Chennai Campus</a></li>
+                    <li><a  ng-href="/faculty/vellore">Vellore Campus</a></li>
+          </ul>
+
+        </li>
+        <li class="dropdown"><a role="button" data-toggle="dropdown"  class="dropdown-toggle">Campus</a>
+        <ul class="dropdown-menu">
+                    <li><a  ng-href="http://vit.ac.in/campus/hostels">Hostel</a></li>
+                    <li><a  ng-href="http://vit.ac.in/academics/hostels">Library</a></li>
+                    <li><a  ng-href="/campus/campus-life">Campus-Life</a></li>
+                    <li><a  ng-href="/campus/facilities">Facilities</a></li>
+          </ul>
+
+        </li>
+        <li class="dropdown"><a role="button" data-toggle="dropdown"  class="dropdown-toggle">Placements</a>
+        <ul class="dropdown-menu">
+                    <li><a  ng-href="/placements">Placements</a></li>
+                    <li><a  ng-href="/placements/placement-procedure">Placement Procedure</a></li>
+          </ul>
+
+        </li>
+        <li class="dropdown"><a role="button" data-toggle="dropdown" class="dropdown-toggle">Events</a>
+        <ul class="dropdown-menu">
+                    <li><a  ng-href="/events/media">Media</a></li>
+                    <li><a  ng-href="/events/photo-gallery">Photo Gallery</a></li>
+          </ul>
+
+        </li>
+        <li><a  href="/#contact-us">Contact Us</a></li>
       </ul>
 
     </div>
