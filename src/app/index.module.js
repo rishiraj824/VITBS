@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('vitbs', ['ui.bootstrap','ui.router', 'ngAnimate','ngParallax'  ])
+    .module('vitbs', ['ui.bootstrap','ui.router', 'ngAnimate','ngParallax','ngMap'])
     .config(config);
     
   function config($stateProvider, $urlRouterProvider) {
