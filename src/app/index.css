@@ -623,3 +623,13 @@ body{
     background: #0768cb;
     color: #fff;
     }
+    .float-left{
+      float: left;
+      margin: 44px 20px 20px 0;
+    }
+    .text-indent{
+
+    text-align: justify;
+    text-indent: 2em;
+
+    }

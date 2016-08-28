@@ -11,19 +11,19 @@
       $scope.myInterval = 3000;
       $scope.slides = [
     {
-      image: 'http://lorempixel.com/1920/700/sports',
+      image: 'http://lorempixel.com/1920/700/',
       caption: 'The University For Leaders'
     },
     {
-      image: 'http://lorempixel.com/1920/700/food',
+      image: 'http://lorempixel.com/1920/700/',
        caption: 'The University For Leaders'
     },
     {
-      image: 'http://lorempixel.com/1920/700/sports',
+      image: 'http://lorempixel.com/1920/700/',
        caption: 'The University For Leaders'
     },
     {
-      image: 'http://lorempixel.com/1920/700/food',
+      image: 'http://lorempixel.com/1920/700/',
        caption: 'The University For Leaders'
     }
   ];
@@ -56,25 +56,25 @@
       $scope.captionInterval = 4000;
       $scope.slides = [
           {
-            image: 'http://lorempixel.com/210/300/sports',
+            image: 'http://lorempixel.com/210/300/',
             caption: 'The University For Leaders',
             description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
             link : '#'
           },
           {
-            image: 'http://lorempixel.com/210/300/food',
+            image: 'http://lorempixel.com/210/300/',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link : '#'
           },
           {
-            image: 'http://lorempixel.com/210/300/sports',
+            image: 'http://lorempixel.com/210/300/',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link : '#'
           },
           {
-            image: 'http://lorempixel.com/210/300/food',
+            image: 'http://lorempixel.com/210/300/',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link : '#'
@@ -87,7 +87,7 @@
       $scope.myInterval = 3000;
       $scope.slides = [
           {
-            image: 'http://lorempixel.com/210/300/sports',
+            image: 'http://lorempixel.com/210/300/',
             caption: 'The University For Leaders',
             description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
             link: "#"
@@ -99,7 +99,7 @@
              link: "#"
           },
           {
-            image: 'http://lorempixel.com/210/300/sports',
+            image: 'http://lorempixel.com/210/300/',
              caption: 'The University For Leaders',
              description: 'Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum',
              link: "#"
@@ -115,12 +115,11 @@
    
    app.controller('ModalDemoCtrl',  function ($scope, $uibModal, $log) {
 
-  $scope.items = ['item1', 'item2', 'item3'];
 
   $scope.animationsEnabled = true;
 
   $scope.open = function (size) {
-
+ 
     var modalInstance = $uibModal.open({
       animation: $scope.animationsEnabled,
       templateUrl: 'myModalContent.html',
